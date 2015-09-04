@@ -1,5 +1,7 @@
 import unittest
-from geocentrics import Geocentrics
+
+from coorblimey.geocentrics import Geocentrics
+
 
 class TestGeocentrics(unittest.TestCase):
 
@@ -11,4 +13,3 @@ class TestGeocentrics(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-
