@@ -28,7 +28,9 @@
         </ul>
       </header>
       <section>
-        <h2>
+        <p><a href="https://codeclimate.com/github/lo-ise/coorblimey"><img src="https://codeclimate.com/github/lo-ise/coorblimey/badges/gpa.svg" alt="Code Climate"></a> <a href="https://circleci.com/gh/lo-ise/coorblimey"><img src="https://circleci.com/gh/lo-ise/coorblimey.png?style=shield" alt="circleci"></a></p>
+
+<h2>
 <a id="what-is-it" class="anchor" href="#what-is-it" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is it?</h2>
 
 <p>coorblimey is an open source Python3 library to transform geocentric coordinates to geographic, and vice versa. </p>
@@ -54,8 +56,7 @@
 <h3>
 <a id="as-a-command-line-tool" class="anchor" href="#as-a-command-line-tool" aria-hidden="true"><span class="octicon octicon-link"></span></a>As a command line tool...</h3>
 
-<pre><code>python coorblimey.py -t to_geographic -x 1418595 
-    -y -689557 -z -6159338 -e GRS80
+<pre><code>python coorblimey.py -t to_geographic -x 1418595 -y -689557 -z -6159338 -e GRS80
 </code></pre>
 
 <p>This will print the results:</p>
@@ -73,10 +74,6 @@ geo      <span class="pl-k">=</span> Geocentrics(<span class="pl-c1">654321</spa
 latlongs <span class="pl-k">=</span> geo.make_geographic()</pre></div>
 
 <p><code>latlongs</code> will be a list of <code>[x, y, z]</code>.</p>
-
-<p><a href="https://codeclimate.com/github/lo-ise/coorblimey"><img src="https://codeclimate.com/github/lo-ise/coorblimey/badges/gpa.svg" alt="Code Climate"></a></p>
-
-<p><a href="https://circleci.com/gh/lo-ise/coorblimey"><img src="https://circleci.com/gh/lo-ise/coorblimey.png?style=shield" alt="circleci"></a></p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/lo-ise">lo-ise</a></p>
