@@ -1,5 +1,9 @@
 # coorblimey
 
+[![Code Climate](https://codeclimate.com/github/lo-ise/coorblimey/badges/gpa.svg)](https://codeclimate.com/github/lo-ise/coorblimey)
+
+[![circleci](https://circleci.com/gh/lo-ise/coorblimey.png?style=shield)](https://circleci.com/gh/lo-ise/coorblimey)
+
 ## What is it?
 
 coorblimey is an open source Python3 library to transform geocentric coordinates to geographic, and vice versa. 
