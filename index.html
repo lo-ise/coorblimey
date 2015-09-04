@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>coorblimey by lo-ise</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>coorblimey</h1>
+        <p>Convert between geocentric and geographic coordinates</p>
+
+        <p class="view"><a href="https://github.com/lo-ise/coorblimey">View the Project on GitHub <small>lo-ise/coorblimey</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/lo-ise/coorblimey/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/lo-ise/coorblimey/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/lo-ise/coorblimey">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h2>
+<a id="what-is-it" class="anchor" href="#what-is-it" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is it?</h2>
+
+<p>coorblimey is an open source Python3 library to transform geocentric coordinates to geographic, and vice versa. </p>
+
+<p>Formulas for the calculations have been taken from:</p>
+
+<p><em>Datums and Map Projections: For Remote Sensing, GIS and Surveying, Second Edition, by Jonathan IIiffe (Editor), Roger Lott.</em></p>
+
+<p>Results were checked against <a href="http://www.apsalin.com/convert-cartesian-to-geodetic.aspx">this handy tool</a>. </p>
+
+<h2>
+<a id="in-its-present-state" class="anchor" href="#in-its-present-state" aria-hidden="true"><span class="octicon octicon-link"></span></a>In it's present state...</h2>
+
+<p>... it only does the geocentric to geographic bit, and only has the ability to do this with either GRS80 or WGS84 ellipsoids.</p>
+
+<p>It outputs latitude, longitude and height above ellipsoid. The precision of this for latitude and longitude is 10 decimal places. For height, to the millimetre. </p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>You can either use this as a command line tool, or as a module to import into your Python programs. </p>
+
+<h3>
+<a id="as-a-command-line-tool" class="anchor" href="#as-a-command-line-tool" aria-hidden="true"><span class="octicon octicon-link"></span></a>As a command line tool...</h3>
+
+<pre><code>python coorblimey.py -t to_geographic -x 1418595 
+    -y -689557 -z -6159338 -e GRS80
+</code></pre>
+
+<p>This will print the results:</p>
+
+<pre><code>Geographic coordinates (GRS80)
+lat: -75.7283616724, lon: -25.9236668699, h: 30.705
+</code></pre>
+
+<h3>
+<a id="as-a-module-to-import" class="anchor" href="#as-a-module-to-import" aria-hidden="true"><span class="octicon octicon-link"></span></a>As a module to import...</h3>
+
+<div class="highlight highlight-python"><pre><span class="pl-k">from</span> coorblimey.geocentrics <span class="pl-k">import</span> Geocentrics
+
+geo      <span class="pl-k">=</span> Geocentrics(<span class="pl-c1">654321</span>, <span class="pl-c1">765433</span>, <span class="pl-c1">98765432</span>, <span class="pl-smi">ellipsoid</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>GRS80<span class="pl-pds">'</span></span>)
+latlongs <span class="pl-k">=</span> geo.make_geographic()</pre></div>
+
+<p><code>latlongs</code> will be a list of <code>[x, y, z]</code>.</p>
+
+<p><a href="https://codeclimate.com/github/lo-ise/coorblimey"><img src="https://codeclimate.com/github/lo-ise/coorblimey/badges/gpa.svg" alt="Code Climate"></a></p>
+
+<p><a href="https://circleci.com/gh/lo-ise/coorblimey"><img src="https://circleci.com/gh/lo-ise/coorblimey.png?style=shield" alt="circleci"></a></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/lo-ise">lo-ise</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
