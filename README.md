@@ -27,14 +27,16 @@ You can either use this as a command line tool, or as a module to import into yo
 
 This will print the results:
 
-    Geographic coordinates (GRS80):
+    Geographic coordinates (GRS80)
     lat: -75.7283616724, lon: -25.9236668699, h: 30.705
 
 ### As a module to import...
 
-    from coorblimey.geocentrics import Geocentrics
+```python
+from coorblimey.geocentrics import Geocentrics
     
-    geo      = Geocentrics(654321, 765433, 98765432, ellipsoid='GRS80')
-    latlongs = geo.make_geographic()
+geo      = Geocentrics(654321, 765433, 98765432, ellipsoid='GRS80')
+latlongs = geo.make_geographic()
+```
 
 `latlongs` will be a list of `[x, y, z]`.

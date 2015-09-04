@@ -31,7 +31,7 @@ z         = args.z
 if transform == 'to_geographic':
     geo = Geocentrics(x, y, z, ellipsoid=ellipsoid)
     latlongs = geo.make_geographic()
-    print("Geographic coordinates ({}):".format(ellipsoid))
+    print("Geographic coordinates ({})".format(ellipsoid))
     print("lat: {0}, lon: {1}, h: {2}".format(latlongs[0], latlongs[1], latlongs[2]))
 elif transform == 'to_geocentric':
     print("coorblimey isn't this clever ... yet.")
