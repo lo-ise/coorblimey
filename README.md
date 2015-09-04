@@ -17,7 +17,7 @@ Results were checked against [this handy tool](http://www.apsalin.com/convert-ca
 
 It outputs latitude, longitude and height above ellipsoid. The precision of this for latitude and longitude is 10 decimal places. For height, to the millimetre. 
 
-## Useage
+## Usage
 
 You can either use this as a command line tool, or as a module to import into your Python programs. 
 
