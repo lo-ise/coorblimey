@@ -21,26 +21,3 @@ Results were checked against [this handy tool](http://www.apsalin.com/convert-ca
 
 It outputs latitude, longitude and height above ellipsoid. The precision of this for latitude and longitude is 10 decimal places. For height, to the millimetre. 
 
-## Usage
-
-You can either use this as a command line tool, or as a module to import into your Python programs. 
-
-### As a command line tool...
-
-    python coorblimey.py -t to_geographic -x 1418595 -y -689557 -z -6159338 -e GRS80
-
-This will print the results:
-
-    Geographic coordinates (GRS80)
-    lat: -75.7283616724, lon: -25.9236668699, h: 30.705
-
-### As a module to import...
-
-```python
-from coorblimey.geocentrics import Geocentrics
-    
-geo      = Geocentrics(654321, 765433, 98765432, ellipsoid='GRS80')
-latlongs = geo.make_geographic()
-```
-
-`latlongs` will be a list of `[x, y, z]`.
