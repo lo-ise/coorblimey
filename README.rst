@@ -1,6 +1,14 @@
 coorblimey
 ==========
 
+.. image:: https://codeclimate.com/github/lo-ise/coorblimey/badges/gpa.svg
+   :target: https://codeclimate.com/github/lo-ise/coorblimey
+   :alt: Code Climate
+
+.. image::
+    :target https://circleci.com/gh/lo-ise/coorblimey.svg?style=shield&circle-token=:circle-token
+    :alt: CircleCI
+
 
 What is it?
 -----------
