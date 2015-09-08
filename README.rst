@@ -31,7 +31,11 @@ ability to do this with either GRS80 or WGS84 ellipsoids.
 
 It outputs latitude, longitude and height above ellipsoid. The precision
 of this for latitude and longitude is 10 decimal places. For height, to
-the millimetre. ## Usage
+the millimetre. 
+
+
+Usage
+-----
 
 You can either use this as a command line tool, or you can import it
 into your python programs...
