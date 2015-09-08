@@ -13,7 +13,7 @@ class Geocentrics():
         self.x = x
         self.y = y
         self.z = z
-        self.ellipsoid = ellipsoid
+        self.ellipsoid = ellipsoid.upper()
         if self.ellipsoid == 'GRS80':
             self.a = 6378137.0
             self.b = 6356752.314140
