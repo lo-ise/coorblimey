@@ -5,7 +5,7 @@ coorblimey
    :target: https://codeclimate.com/github/lo-ise/coorblimey
    :alt: Code Climate
 
-.. image:: https://circleci.com/gh/lo-ise/coorblimey/tree/master.svg?style=svg?style=shield&circle-token=:circle-token
+.. image:: https://circleci.com/gh/lo-ise/coorblimey/tree/master.svg?style=svg?style=shield
    :target: https://circleci.com/gh/lo-ise/coorblimey/tree/master
 
 What is it?
