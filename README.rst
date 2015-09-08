@@ -34,6 +34,17 @@ of this for latitude and longitude is 10 decimal places. For height, to
 the millimetre. 
 
 
+Installation
+------------
+
+Easy hopefully, just...
+
+::
+
+    pip install coorblimey
+
+ 
+
 Usage
 -----
 
