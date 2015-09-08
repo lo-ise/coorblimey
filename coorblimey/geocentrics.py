@@ -18,7 +18,7 @@ class Geocentrics():
             self.a = 6378137.0
             self.b = 6356752.314140
         if self.ellipsoid == 'WGS84':
-            self.a = 6378137
+            self.a = 6378137.0
             self.b = 6356752.3142
 
 
@@ -78,10 +78,6 @@ class Geocentrics():
         #height, h
         h = p * (1 / math.cos(lat_rad)) - v
 
-        return [round(lat_deg, 10), round(lon_deg, 10), round(h, 3)]
+        return [round(lat_deg, 8), round(lon_deg, 8), round(h, 3)]
 
 
-if __name__ == "__main__":
-    geo      = Geocentrics(1418595, -689557, -6159338)
-    lat_long = geo.make_geographic()
-    print(lat_long)
