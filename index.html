@@ -31,13 +31,6 @@
         <h1>
 <a id="coorblimey" class="anchor" href="#coorblimey" aria-hidden="true"><span class="octicon octicon-link"></span></a>coorblimey</h1>
 
-<p>.. image:: <a href="https://codeclimate.com/github/lo-ise/coorblimey/badges/gpa.svg">https://codeclimate.com/github/lo-ise/coorblimey/badges/gpa.svg</a>
-   :target: <a href="https://codeclimate.com/github/lo-ise/coorblimey">https://codeclimate.com/github/lo-ise/coorblimey</a>
-   :alt: Code Climate</p>
-
-<p>.. image:: <a href="https://circleci.com/gh/lo-ise/coorblimey.png?style=shield">https://circleci.com/gh/lo-ise/coorblimey.png?style=shield</a>
-   :target: <a href="https://circleci.com/gh/lo-ise/coorblimey/tree/master">https://circleci.com/gh/lo-ise/coorblimey/tree/master</a></p>
-
 <h2>
 <a id="what-is-it" class="anchor" href="#what-is-it" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is it?</h2>
 
@@ -49,8 +42,8 @@ coordinates to geographic, and vice versa.</p>
 <p><em>Datums and Map Projections: For Remote Sensing, GIS and Surveying,
 Second Edition, by Jonathan IIiffe (Editor), Roger Lott.</em></p>
 
-<p>Results were checked against <code>this handy
-tool &lt;http://www.apsalin.com/convert-cartesian-to-geodetic.aspx&gt;</code>__.</p>
+<p>Results were checked against <a href="http://www.apsalin.com/convert-cartesian-to-geodetic.aspx">this handy
+tool</a>.</p>
 
 <h2>
 <a id="in-its-present-state" class="anchor" href="#in-its-present-state" aria-hidden="true"><span class="octicon octicon-link"></span></a>In it's present state...</h2>
@@ -67,8 +60,6 @@ the millimetre. </p>
 
 <p>Easy hopefully, just...</p>
 
-<p>::</p>
-
 <pre><code>pip install coorblimey
 </code></pre>
 
@@ -80,14 +71,10 @@ into your python programs...</p>
 
 <p><strong>... as a command line tool</strong></p>
 
-<p>::</p>
-
 <pre><code>coorblimey -t to_geographic -x 1418595 -y -689557 -z -6159338 -e GRS80
 </code></pre>
 
 <p>This will give:</p>
-
-<p>::</p>
 
 <pre><code>Geographic coordinates (GRS80)
 lat: -75.7283616724, lon: -25.9236668699, h: 30.705
@@ -95,13 +82,10 @@ lat: -75.7283616724, lon: -25.9236668699, h: 30.705
 
 <p><strong>... in Python programs</strong></p>
 
-<p>.. code:: python</p>
+<div class="highlight highlight-python"><pre><span class="pl-k">from</span> coorblimey.geocentrics <span class="pl-k">import</span> Geocentrics
 
-<pre><code>from coorblimey.geocentrics import Geocentrics
-
-geo      = Geocentrics(1418595, -689557, -6159338, ellipsoid='GRS80')
-latlongs = geo.make_geographic()
-</code></pre>
+geo      <span class="pl-k">=</span> Geocentrics(<span class="pl-c1">1418595</span>, <span class="pl-k">-</span><span class="pl-c1">689557</span>, <span class="pl-k">-</span><span class="pl-c1">6159338</span>, <span class="pl-smi">ellipsoid</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>GRS80<span class="pl-pds">'</span></span>)
+latlongs <span class="pl-k">=</span> geo.make_geographic()</pre></div>
 
 <p><code>latlongs</code> with be a list <code>[x, y, z]</code></p>
       </section>
