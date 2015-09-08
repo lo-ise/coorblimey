@@ -59,7 +59,7 @@ This will give:
 
     from coorblimey.geocentrics import Geocentrics
 
-    geo      = Geocentrics(1418595, -689557, -6159338, ellipsoid=GRS80)
+    geo      = Geocentrics(1418595, -689557, -6159338, ellipsoid='GRS80')
     latlongs = geo.make_geographic()
 
 ``latlongs`` with be a list ``[x, y, z]``
