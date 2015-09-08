@@ -8,6 +8,7 @@ def main():
     parser = argparse.ArgumentParser()
 
     parser.add_argument('-t', type=str, metavar='transform', dest='transform', required=True,
+                    choices=['to_geographic', 'to_geocentric'],
                     help='Select either to_geographic, or to_geocentric.')
 
     parser.add_argument('-x', type=float, metavar='x', dest='x', required=True, 
@@ -20,6 +21,7 @@ def main():
                     help='Enter z coordinate in metres.')
 
     parser.add_argument('-e', type=str, metavar='ellipsoid', dest='ellipsoid', required=True,
+                    choices=['GRS80', 'WGS84'],
                     help='Select which ellipsoid your coordinates are in reference to. At the moment we only support either WGS84 or GRS80.')
 
     args = parser.parse_args()
