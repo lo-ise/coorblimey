@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 
 # Get the long description from the README.
-with codecs_open('README.md', encoding='utf-8') as f:
+with codecs_open('README.rst', encoding='utf-8') as f:
     long_description = f.read()
 
 # Get the version from coorblimey/__init__.py.
