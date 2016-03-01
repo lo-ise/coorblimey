@@ -70,14 +70,16 @@ class Geocentrics():
         #v 
         v = self.a / ((1 - e_sqrd * math.sin(lat_rad)**2)**0.5)
 
+
         #long
-        tan_lon = self.y/self.x
-        lon_rad = math.atan(tan_lon)
+        lon_rad = math.atan2(self.y, self.x)
         lon_deg = math.degrees(lon_rad)
+
 
         #height, h
         h = p * (1 / math.cos(lat_rad)) - v
 
         return [round(lon_deg, 8), round(lat_deg, 8), round(h, 3)]
+
 
 
