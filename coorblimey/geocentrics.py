@@ -79,7 +79,7 @@ class Geocentrics():
         #height, h
         h = p * (1 / math.cos(lat_rad)) - v
 
-        return [round(lon_deg, 8), round(lat_deg, 8), round(h, 3)]
+        return [round(lat_deg, 8), round(lon_deg, 8), round(h, 3)]
 
 
 

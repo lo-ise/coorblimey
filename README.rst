@@ -77,5 +77,5 @@ This will give:
     geo      = Geocentrics(1418595, -689557, -6159338, ellipsoid='GRS80')
     latlongs = geo.make_geographic()
 
-``latlongs`` with be a list ``[x, y, z]``
+``latlongs`` with be a list ``[lat, lon, z]``
 
